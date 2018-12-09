@@ -1,0 +1,30 @@
+{
+    "name": "andrewgjohnson/imagecolorallocatefromstring",
+    "type": "library",
+    "description": "imagecolorallocatefromstring is a function that will allocate a color based on a string for your PHP GD images",
+    "keywords": [
+        "gd",
+        "graphics",
+        "image",
+        "images"
+    ],
+    "homepage": "https://github.com/andrewgjohnson/imagecolorallocatefromstring",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew G Johnson",
+            "email": "andrew@andrewgjohnson.com",
+            "homepage": "http://www.andrewgjohnson.com/",
+            "role": "Project Lead"
+        }
+    ],
+    "require": {
+        "php": ">=5.0.0",
+        "ext-gd": "*"
+    },
+    "autoload": {
+        "files": [
+            "source/imagecolorallocatefromstring.php"
+        ]
+    }
+}
