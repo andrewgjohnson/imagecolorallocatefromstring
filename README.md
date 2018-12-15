@@ -7,6 +7,8 @@
 [![Packagist Downloads](https://img.shields.io/packagist/dt/andrewgjohnson/imagecolorallocatefromstring.png)](https://packagist.org/packages/andrewgjohnson/imagecolorallocatefromstring/stats)
 [![Issues](https://img.shields.io/github/issues/andrewgjohnson/imagecolorallocatefromstring.png)](https://github.com/andrewgjohnson/imagecolorallocatefromstring/issues)
 
+<p align="center"><a href="https://imagecolorallocatefromstring.org/" title=""><img src="https://imagecolorallocatefromstring.org/documentation/imagecolorallocatefromstring.org/images/avatar.png" alt="" title="" width="400" id="avatar" /></a></p>
+
 ## Description
 
 **imagecolorallocatefromstring** is a function that will allocate a color based on a string for your PHP GD images.
@@ -45,7 +47,7 @@ To use without Composer add an [include](http://php.net/manual/function.include.
     $alsoRed = imagecolorallocatefromstring($im, '#f00');
     $alsoRed = imagecolorallocatefromstring($im, 'f00');
 
-There are [other examples](https://github.com/andrewgjohnson/imagecolorallocatefromstring/tree/master/examples) included in the GitHub repository.
+There are [other examples](https://github.com/andrewgjohnson/imagecolorallocatefromstring/tree/master/examples) included in the GitHub repository and on [imagecolorallocatefromstring.org](https://imagecolorallocatefromstring.org/examples/).
 
 ## Help Requests
 
