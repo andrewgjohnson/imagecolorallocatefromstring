@@ -1,3 +1,3 @@
 # Examples
 
-The examples can be viewed on [imagecolorallocatefromstring.org/examples](https://imagecolorallocatefromstring.org/examples/).
+The examples can be viewed on [imagecolorallocatefromstring.agjgd.org/examples](https://imagecolorallocatefromstring.agjgd.org/examples/).
