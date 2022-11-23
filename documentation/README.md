@@ -1,3 +1,3 @@
 # Documentation
 
-The documentation can be viewed on [imagecolorallocatefromstring.org](https://imagecolorallocatefromstring.org/).
+The documentation can be viewed on [imagecolorallocatefromstring.agjgd.org](https://imagecolorallocatefromstring.agjgd.org/).
