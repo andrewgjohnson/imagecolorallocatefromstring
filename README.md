@@ -2,11 +2,10 @@
 
 [![MIT License](https://img.shields.io/badge/license-MIT-0366d6.png?colorB=0366d6&style=flat-square)](https://github.com/andrewgjohnson/imagecolorallocatefromstring/blob/master/LICENSE)
 [![Current Release](https://img.shields.io/github/release/andrewgjohnson/imagecolorallocatefromstring.png?colorB=0366d6&style=flat-square&logoColor=white&logo=github)](https://github.com/andrewgjohnson/imagecolorallocatefromstring/releases)
-[![GitHub Stars](https://img.shields.io/github/stars/andrewgjohnson/imagecolorallocatefromstring.png?colorB=0366d6&style=flat-square&logoColor=white&logo=github)](https://github.com/andrewgjohnson/imagecolorallocatefromstring/stargazers)
 [![Contributors](https://img.shields.io/github/contributors/andrewgjohnson/imagecolorallocatefromstring.png?colorB=0366d6&style=flat-square&logoColor=white&logo=github)](https://github.com/andrewgjohnson/imagecolorallocatefromstring/graphs/contributors)
 [![Packagist Downloads](https://img.shields.io/packagist/dt/andrewgjohnson/imagecolorallocatefromstring.png?colorB=0366d6&style=flat-square&logoColor=white&logo=packagist)](https://packagist.org/packages/andrewgjohnson/imagecolorallocatefromstring/stats)
 [![Issues](https://img.shields.io/github/issues/andrewgjohnson/imagecolorallocatefromstring.png?colorB=0366d6&style=flat-square&logoColor=white&logo=github)](https://github.com/andrewgjohnson/imagecolorallocatefromstring/issues)
-[![Patreon](https://img.shields.io/endpoint.png?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dagjopensource%26type%3Dpatrons&colorB=0366d6&style=flat-square&logoColor=white&logo=patreon)](https://patreon.com/agjopensource)
+[![Patreon](https://imagecolorallocatefromstring.agjgd.org/documentation/imagecolorallocatefromstring.agjgd.org/images/patreon-badge.png)](https://patreon.com/agjopensource)
 
 <p align="center"><a href="https://imagecolorallocatefromstring.agjgd.org/" title=""><img src="https://imagecolorallocatefromstring.agjgd.org/documentation/imagecolorallocatefromstring.agjgd.org/images/avatar.png" alt="" title="" width="400" id="avatar" /></a></p>
 
@@ -16,7 +15,7 @@
 
 [![Patreon - Become a Patron](https://raster.shields.io/badge/Patreon%20-become%20a%20Patron-FD334A.png?style=for-the-badge&logo=patreon&logoColor=FD334A)](https://patreon.com/agjopensource)
 
-**imagecolorallocatefromstring** is an [agjgd.org](https://agjgd.org) project.
+**imagecolorallocatefromstring** is an [agjgd](https://agjgd.org) project.
 
 ## Usage
 
