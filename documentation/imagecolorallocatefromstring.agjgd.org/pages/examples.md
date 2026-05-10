@@ -7,5 +7,5 @@ nav:       3
 
 # Examples
 
- * [Example: **Basic**](/examples/basic/)
- * [Example: **Hex**](/examples/hex/)
+ * [Example One: **Basic**](/examples/basic/)
+ * [Example Two: **Alternatives**](/examples/alternatives/)

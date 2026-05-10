@@ -17,10 +17,16 @@ exclude:      [
                CHANGELOG.md,
                CNAME,
                composer.json,
+               composer.lock,
                documentation/README.md,
                examples/*.php,
                examples/*.ttf,
                LICENSE,
                README.md,
-               source
+               source,
+               vendor,
+               vendor/*.md,
+               phpcs.xml.dist,
+               tests,
+               phpunit.xml.dist
               ]
