@@ -2,7 +2,7 @@
 layout:    layout
 title:     imagecolorallocatefromstring&#58; License
 permalink: /license/
-nav:       4
+nav:       5
 ---
 
 # License

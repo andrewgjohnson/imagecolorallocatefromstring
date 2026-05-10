@@ -14,3 +14,4 @@ _site
 .settings/*
 composer.lock
 vendor
+.phpunit.result.cache

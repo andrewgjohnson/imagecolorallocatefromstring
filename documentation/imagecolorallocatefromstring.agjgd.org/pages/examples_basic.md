@@ -6,12 +6,12 @@ permalink: /examples/basic/
 
 # Example: Basic
 
-[**example_basic.php**](https://github.com/andrewgjohnson/imagecolorallocatefromstring/blob/master/examples/example_basic.php)
+[**01-basic.php**](https://github.com/andrewgjohnson/imagecolorallocatefromstring/blob/master/examples/01-basic.php)
 
-<pre><code>{% include examples/example_basic.php %}</code></pre>
+<pre><code>{% include examples/01-basic.php %}</code></pre>
 
 ## Expected Output
 
-[**example_basic.png**](https://github.com/andrewgjohnson/imagecolorallocatefromstring/blob/master/examples/example_basic.png)
+[**01-basic.png**](https://github.com/andrewgjohnson/imagecolorallocatefromstring/blob/master/examples/01-basic.png)
 
-![Example: Basic](/examples/example_basic.png "Example: Basic")
+![Example: Basic](/examples/01-basic.png "Example: Basic")

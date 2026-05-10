@@ -41,15 +41,15 @@ To use without Composer add an [include](http://php.net/manual/function.include.
 
 ## Examples
 
-    // standard method to allocate a color for an image
-    $red = imagecolorallocate($im, 0xFF, 0x00, 0x00);
-
-    // these will all allocate the same color as the method above
-    $alsoRed = imagecolorallocatefromstring($im, '#FF0000');
-    $alsoRed = imagecolorallocatefromstring($im, '#Ff0000');
-    $alsoRed = imagecolorallocatefromstring($im, '#ff0000');
-    $alsoRed = imagecolorallocatefromstring($im, '#f00');
-    $alsoRed = imagecolorallocatefromstring($im, 'f00');
+    // Allocate red with imagecolorallocate() or with imagecolorallocatefromstring() via a string
+    $red           = imagecolorallocate($im, 0xFF, 0x00, 0x00);
+    $redFromString = imagecolorallocatefromstring($im, '#FF0000');
+    $redFromString = imagecolorallocatefromstring($im, '#f00');
+    $redFromString = imagecolorallocatefromstring($im, 'rgb(255 0 0)');
+    $redFromString = imagecolorallocatefromstring($im, 'rgb(255, 0, 0)');
+    $redFromString = imagecolorallocatefromstring($im, 'rgba(255, 0, 0, 1)');
+    $redFromString = imagecolorallocatefromstring($im, 'rgba(255 0 0 / 100%)');
+    $redFromString = imagecolorallocatefromstring($im, 'red');
 
 There are [other examples](https://github.com/andrewgjohnson/imagecolorallocatefromstring/tree/master/examples) included in the GitHub repository and on [imagecolorallocatefromstring.agjgd.org](https://imagecolorallocatefromstring.agjgd.org/examples/).
 
@@ -61,7 +61,7 @@ If you discover a bug please [enter an issue](https://github.com/andrewgjohnson/
 
 ## Contributing
 
-Please read our [contributing guidelines](https://github.com/andrewgjohnson/imagecolorallocatefromstring/blob/master/CONTRIBUTING.md) if you want to contribute.
+Please read our [contributing guidelines](https://github.com/andrewgjohnson/imagecolorallocatefromstring/blob/master/.github/CONTRIBUTING.md) if you want to contribute.
 
 You can contribute financially by becoming a [patron](https://patreon.com/agjopensource) at [patreon.com/agjopensource](https://patreon.com/agjopensource) to support imagecolorallocatefromstring and [other agjgd.org projects](https://agjgd.org/projects/).
 
