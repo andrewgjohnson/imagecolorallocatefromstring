@@ -36,8 +36,8 @@ if (file_exists('../source/imagecolorallocatefromstring.php')) {
 $width           = 600;
 $height          = 300;
 $offset          = (int)round($width / 7);
-$squareWidth     = $offset * 2;
-$squareHeight    = $height - ($offset * 2);
+$rectangleWidth  = $offset * 2;
+$rectangleHeight = $height - ($offset * 2);
 
 // Create our image
 $im              = imagecreatetruecolor($width, $height);
@@ -55,17 +55,17 @@ imagefilledrectangle(
     $im,
     $offset,
     $offset,
-    $offset + $squareWidth,
-    $offset + $squareHeight,
+    $offset + $rectangleWidth,
+    $offset + $rectangleHeight,
     $redViaRgbValues
 );
 
 imagefilledrectangle(
     $im,
-    $offset + $squareWidth + $offset,
+    $offset + $rectangleWidth + $offset,
     $offset,
-    $offset + $squareWidth + $offset + $squareWidth,
-    $offset + $squareHeight,
+    $offset + $rectangleWidth + $offset + $rectangleWidth,
+    $offset + $rectangleHeight,
     $redViaString
 );
 

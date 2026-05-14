@@ -15,3 +15,5 @@ _site
 composer.lock
 vendor
 .phpunit.result.cache
+.claude
+.claude/*
