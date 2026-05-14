@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Imagecolorallocatefromstring v1.1.0
+ * Imagecolorallocatefromstring v1.1.1
  *
  * Copyright (c) 2018-2026 Andrew G. Johnson <andrew@andrewgjohnson.com>
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
@@ -48,8 +48,8 @@ if (!function_exists('imagecolorallocatefromstring')) {
      *
      * @param \GdImage|resource $image  A GdImage object (PHP 8 and newer) or an image resource (older versions of PHP),
      * returned by one of the image creation functions, such as imagecreatetruecolor().
-     * @param string            $string A string describing the color. You can pass a hex code (E.G. '#ff0000'), an RGB
-     * value (E.G. 'rgb(255, 0, 0)') or an RGBA value (E.G. 'rgba(255, 0, 0, 1)').
+     * @param string            $string A string describing the color. You can pass a hex code (e.g. '#ff0000'), an RGB
+     * value (e.g. 'rgb(255, 0, 0)') or an RGBA value (e.g. 'rgba(255, 0, 0, 1)').
      * @param int               $alpha  A value between 0 and 127. 0 indicates completely opaque while 127 indicates
      * completely transparent. Default is zero.
      *
@@ -87,11 +87,6 @@ if (!function_exists('imagecolorallocatefromstring')) {
             $red   = hexdec(substr($string, 0, 2));
             $green = hexdec(substr($string, 2, 2));
             $blue  = hexdec(substr($string, 4, 2));
-        } elseif (preg_match('/^rgb\(([0-9]+), *([0-9]+), *([0-9]+)\)$/', $string, $matches)) {
-            // Transform the RGB values to integers.
-            $red   = (int)$matches[1];
-            $green = (int)$matches[2];
-            $blue  = (int)$matches[3];
         } elseif (
             preg_match(
                 '/^(rgba?)\(([0-9]+)(?:, *| +)([0-9]+)(?:, *| +)([0-9]+)(?:(?:, *| *\/ *)((?:0|1|0?\.[0-9]+)|' .
@@ -133,7 +128,7 @@ if (!function_exists('imagecolorallocatefromstring')) {
             }
         } else {
             // Match against CSS color keywords. Source: https://www.w3.org/wiki/CSS/Properties/color/keywords
-            $webSafeColors = array(
+            $cssColorKeywords = array(
                 'aliceblue'            => array(0xF0, 0xF8, 0xFF),
                 'antiquewhite'         => array(0xFA, 0xEB, 0xD7),
                 'aqua'                 => array(0x00, 0xFF, 0xFF),
@@ -283,10 +278,10 @@ if (!function_exists('imagecolorallocatefromstring')) {
                 'yellowgreen'          => array(0x9A, 0xCD, 0x32)
             );
 
-            if (isset($webSafeColors[$string])) {
-                $red   = $webSafeColors[$string][0];
-                $green = $webSafeColors[$string][1];
-                $blue  = $webSafeColors[$string][2];
+            if (isset($cssColorKeywords[$string])) {
+                $red   = $cssColorKeywords[$string][0];
+                $green = $cssColorKeywords[$string][1];
+                $blue  = $cssColorKeywords[$string][2];
             } else {
                 // Throw an exception as the $string value passed was not a valid color.
                 throw new Exception(
