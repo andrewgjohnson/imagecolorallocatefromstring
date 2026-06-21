@@ -5,9 +5,9 @@
 [![Contributors](https://img.shields.io/github/contributors/andrewgjohnson/imagecolorallocatefromstring.png?colorB=0366d6&style=flat-square&logoColor=white&logo=github)](https://github.com/andrewgjohnson/imagecolorallocatefromstring/graphs/contributors)
 [![Packagist Downloads](https://img.shields.io/packagist/dt/andrewgjohnson/imagecolorallocatefromstring.png?colorB=0366d6&style=flat-square&logoColor=white&logo=packagist)](https://packagist.org/packages/andrewgjohnson/imagecolorallocatefromstring/stats)
 [![Issues](https://img.shields.io/github/issues/andrewgjohnson/imagecolorallocatefromstring.png?colorB=0366d6&style=flat-square&logoColor=white&logo=github)](https://github.com/andrewgjohnson/imagecolorallocatefromstring/issues)
-[![Patreon](https://imagecolorallocatefromstring.agjgd.org/documentation/imagecolorallocatefromstring.agjgd.org/images/patreon-badge.png)](https://patreon.com/agjopensource)
+[![Patreon](documentation/images/patreon-badge.png)](https://patreon.com/agjopensource)
 
-<p align="center"><a href="https://imagecolorallocatefromstring.agjgd.org/" title=""><img src="https://imagecolorallocatefromstring.agjgd.org/documentation/imagecolorallocatefromstring.agjgd.org/images/avatar.png" alt="" title="" width="400" id="avatar" /></a></p>
+<p align="center"><a href="https://imagecolorallocatefromstring.agjgd.org/" title=""><img src="documentation/images/avatar.png" alt="" title="" width="400" id="avatar" /></a></p>
 
 ## Description
 
@@ -16,6 +16,20 @@
 [![Patreon - Become a Patron](https://raster.shields.io/badge/Patreon%20-become%20a%20Patron-FD334A.png?style=for-the-badge&logo=patreon&logoColor=FD334A)](https://patreon.com/agjopensource)
 
 **imagecolorallocatefromstring** is an [agjgd](https://agjgd.org) project.
+
+## Examples
+
+    // Allocate red with imagecolorallocate() or with imagecolorallocatefromstring() via a string
+    $red           = imagecolorallocate($im, 0xFF, 0x00, 0x00);
+    $redFromString = imagecolorallocatefromstring($im, '#FF0000');
+    $redFromString = imagecolorallocatefromstring($im, '#f00');
+    $redFromString = imagecolorallocatefromstring($im, 'rgb(255 0 0)');
+    $redFromString = imagecolorallocatefromstring($im, 'rgb(255, 0, 0)');
+    $redFromString = imagecolorallocatefromstring($im, 'rgba(255, 0, 0, 1)');
+    $redFromString = imagecolorallocatefromstring($im, 'rgba(255 0 0 / 100%)');
+    $redFromString = imagecolorallocatefromstring($im, 'red');
+
+There are [other examples](https://github.com/andrewgjohnson/imagecolorallocatefromstring/tree/master/examples) included in the GitHub repository and on [imagecolorallocatefromstring.agjgd.org](https://imagecolorallocatefromstring.agjgd.org/examples/).
 
 ## Usage
 
@@ -39,20 +53,6 @@ To use without Composer add an [include](https://www.php.net/manual/en/function.
 
     include_once 'source/imagecolorallocatefromstring.php';
 
-## Examples
-
-    // Allocate red with imagecolorallocate() or with imagecolorallocatefromstring() via a string
-    $red           = imagecolorallocate($im, 0xFF, 0x00, 0x00);
-    $redFromString = imagecolorallocatefromstring($im, '#FF0000');
-    $redFromString = imagecolorallocatefromstring($im, '#f00');
-    $redFromString = imagecolorallocatefromstring($im, 'rgb(255 0 0)');
-    $redFromString = imagecolorallocatefromstring($im, 'rgb(255, 0, 0)');
-    $redFromString = imagecolorallocatefromstring($im, 'rgba(255, 0, 0, 1)');
-    $redFromString = imagecolorallocatefromstring($im, 'rgba(255 0 0 / 100%)');
-    $redFromString = imagecolorallocatefromstring($im, 'red');
-
-There are [other examples](https://github.com/andrewgjohnson/imagecolorallocatefromstring/tree/master/examples) included in the GitHub repository and on [imagecolorallocatefromstring.agjgd.org](https://imagecolorallocatefromstring.agjgd.org/examples/).
-
 ## Help Requests
 
 Please post any questions in the [discussions area](https://github.com/andrewgjohnson/imagecolorallocatefromstring/discussions) on GitHub if you need help.
@@ -74,7 +74,7 @@ This project was started by [Andrew G. Johnson (@andrewgjohnson)](https://github
 Full list of contributors:
  * [Andrew G. Johnson (@andrewgjohnson)](https://github.com/andrewgjohnson)
 
-Our [security policies and procedures](https://github.com/andrewgjohnson/imagecolorallocatefromstring/blob/master/.github/SECURITY.md) come via the [atomist/samples](https://github.com/atomist/samples/blob/master/SECURITY.md) project. Our [issue templates](https://github.com/andrewgjohnson/imagecolorallocatefromstring/tree/master/.github/ISSUE_TEMPLATE) come via the [tensorflow/tensorflow](https://github.com/tensorflow/tensorflow/blob/master/SECURITY.md) project. Our [pull request template](https://github.com/andrewgjohnson/imagecolorallocatefromstring/blob/master/.github/PULL_REQUEST_TEMPLATE.md) comes via the [stevemao/github-issue-templates](https://github.com/stevemao/github-issue-templates) project. The [mountains photo](https://unsplash.com/photos/qJvpykJ5SKs) comes via [Gabriel Garcia Marengo](https://unsplash.com/@gabrielgm).
+Our [security policies and procedures](https://github.com/andrewgjohnson/imagecolorallocatefromstring/blob/master/.github/SECURITY.md) come via the [atomist/samples](https://github.com/atomist/samples/blob/master/SECURITY.md) project. Our [issue templates](https://github.com/andrewgjohnson/imagecolorallocatefromstring/tree/master/.github/ISSUE_TEMPLATE) come via the [tensorflow/tensorflow](https://github.com/tensorflow/tensorflow/blob/master/SECURITY.md) project. Our [pull request template](https://github.com/andrewgjohnson/imagecolorallocatefromstring/blob/master/.github/PULL_REQUEST_TEMPLATE.md) comes via the [stevemao/github-issue-templates](https://github.com/stevemao/github-issue-templates) project. The [Jekyll theme](https://github.com/andrewgjohnson/open-source-documentation-jekyll-theme) was released by [Andrew G. Johnson](https://github.com/andrewgjohnson).
 
 ## Changelog
 

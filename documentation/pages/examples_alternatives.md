@@ -1,6 +1,6 @@
 ---
-layout:    layout
-title:     imagecolorallocatefromstring&#58; Examples&#58; Alternatives
+layout:    default
+title:     Alternatives • Examples • imagecolorallocatefromstring
 permalink: /examples/alternatives/
 ---
 
