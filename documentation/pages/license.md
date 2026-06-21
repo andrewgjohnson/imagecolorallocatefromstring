@@ -1,8 +1,9 @@
 ---
-layout:    layout
-title:     imagecolorallocatefromstring&#58; License
+layout:    default
+title:     License • imagecolorallocatefromstring
 permalink: /license/
-nav:       5
+nav_order: 5
+nav_text:  License
 ---
 
 # License
