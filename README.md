@@ -13,6 +13,10 @@
 
 **imagecolorallocatefromstring** is a function that will allocate a color based on a string for your PHP GD images.
 
+As of **v2.0.0** imagecolorallocatefromstring is part of [**AgjGd**](https://agjgd.org). The implementation now lives in the `\AndrewGJohnson\AgjGd` class provided by the [`andrewgjohnson/agjgd`](https://packagist.org/packages/andrewgjohnson/agjgd) package, and this package provides the standalone `imagecolorallocatefromstring()` function as a thin reverse-compatibility wrapper around it.
+
+New code should call [`\AndrewGJohnson\AgjGd::imagecolorallocatefromstring()`](https://agjgd.org/methods/imagecolorallocatefromstring/) directly.
+
 [![Patreon - Become a Patron](https://raster.shields.io/badge/Patreon%20-become%20a%20Patron-FD334A.png?style=for-the-badge&logo=patreon&logoColor=FD334A)](https://patreon.com/agjopensource)
 
 **imagecolorallocatefromstring** is an [agjgd](https://agjgd.org) project.
@@ -45,13 +49,16 @@ Either run this command:
 
 or add this to the `require` section of your composer.json file:
 
-    "andrewgjohnson/imagecolorallocatefromstring": "1.*"
+    "andrewgjohnson/imagecolorallocatefromstring": "^2.0"
+
+This package requires PHP 8.0 or newer, the [GD extension](https://www.php.net/manual/book.image.php) and the [`andrewgjohnson/agjgd`](https://packagist.org/packages/andrewgjohnson/agjgd) package, which Composer installs automatically.
 
 ### Without Composer
 
-To use without Composer add an [include](https://www.php.net/manual/en/function.include.php) to the [`imagecolorallocatefromstring.php` source file](https://raw.githubusercontent.com/andrewgjohnson/imagecolorallocatefromstring/master/source/imagecolorallocatefromstring.php).
+Because `imagecolorallocatefromstring()` now forwards to the `\AndrewGJohnson\AgjGd` class, you need both this wrapper and AgjGd. Composer is the recommended way to install them, but you can also require both source files directly:
 
-    include_once 'source/imagecolorallocatefromstring.php';
+    require_once 'path/to/agjgd/source/AndrewGJohnson/AgjGd.php';
+    require_once 'source/imagecolorallocatefromstring.php';
 
 ## Help Requests
 

@@ -4,12 +4,23 @@ All notable changes to the [imagecolorallocatefromstring project](https://github
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [v2.0.0](https://github.com/andrewgjohnson/imagecolorallocatefromstring/releases/tag/v2.0.0) (August 5, 2026)
+
+imagecolorallocatefromstring is now part of [AgjGd](https://agjgd.org). The implementation has moved to the `\AndrewGJohnson\AgjGd` class and this package is now a thin reverse-compatibility wrapper around it.
+
+ * **Breaking:** raised the minimum PHP version from 5.0 to 8.0
+ * **Breaking:** added a dependency on [`andrewgjohnson/agjgd`](https://packagist.org/packages/andrewgjohnson/agjgd); the `imagecolorallocatefromstring()` implementation now lives in the `\AndrewGJohnson\AgjGd` class
+ * **Breaking:** invalid `$string` and `$alpha` values now throw an `\InvalidArgumentException` rather than a plain `\Exception`; code catching `\Exception` is unaffected as `\InvalidArgumentException` extends it
+ * **Breaking:** reworded those exception messages from `imagecolorallocatefromstring function received…` to `imagecolorallocatefromstring() received…`; only code matching on the message text is affected
+ * Changed the global `imagecolorallocatefromstring()` function into a deprecated reverse-compatibility wrapper that forwards to `\AndrewGJohnson\AgjGd::imagecolorallocatefromstring()`; please use the class in new code
+ * Updated the examples and documentation to load the class through Composer’s autoloader
+
 ## [v1.1.1](https://github.com/andrewgjohnson/imagecolorallocatefromstring/releases/tag/v1.1.1) (May 13, 2026)
  * Changed the font in the examples from Arial to [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) which uses the [SIL OFL 1.1](https://openfontlicense.org/open-font-license-official-text/)
  * Updated documentation website to replace deprecated `hljs.initHighlighting()` call with `hljs.highlightAll()` and removed obsolete Google Analytics script
  * Expanded unit tests to provide comprehensive coverage across hex formats, `rgb()`, `rgba()` with decimal and percentage alpha values, CSS color keywords, the `$alpha` parameter, whitespace trimming and error cases
- * Cleaned up source code by removing a redundant `rgb()` parsing branch, renaming `$webSafeColors` to `$cssColorKeywords`, renaming `$squareWidth`/`$squareHeight` to `$rectangleWidth`/`$rectangleHeight` in the examples, and correcting `E.G.` to `e.g.` in the docblock
- * Fixed documentation issues including grammar errors in README.md, a dead link in CONTRIBUTING.md (`help.github.com` updated to `docs.github.com`), removed defunct Gitter and Google+ platform references from CODE_OF_CONDUCT.md, and removed dead YUI library links from the documentation website
+ * Cleaned up source code by removing a redundant `rgb()` parsing branch, renaming `$webSafeColors` to `$cssColorKeywords`, renaming `$squareWidth`/`$squareHeight` to `$rectangleWidth`/`$rectangleHeight` in the examples and correcting `E.G.` to `e.g.` in the docblock
+ * Fixed documentation issues including grammar errors in README.md, a dead link in CONTRIBUTING.md (`help.github.com` updated to `docs.github.com`), removed defunct Gitter and Google+ platform references from CODE_OF_CONDUCT.md and removed dead YUI library links from the documentation website
 
 ## [v1.1.0](https://github.com/andrewgjohnson/imagecolorallocatefromstring/releases/tag/v1.1.0) (May 9, 2026)
  * Added [Contribute](https://imagecolorallocatefromstring.agjgd.org/contribute/) page and updated [contributing guidelines](https://github.com/andrewgjohnson/imagecolorallocatefromstring/blob/master/.github/CONTRIBUTING.md)
